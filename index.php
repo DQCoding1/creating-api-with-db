@@ -10,6 +10,5 @@
         print_r(getCars());
       }
       break;
-  
   }
 ?>

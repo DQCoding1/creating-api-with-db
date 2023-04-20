@@ -1,10 +1,10 @@
 <?php
 
   function connectToDb(){
-    $server = "localhost:3307";
-    $user = "root";
-    $password = "";
-    $dbname = "vehicles";
+    $server = "localhost";
+    $user = "id20631523_root";
+    $password = "iy[qtH*RqMhjXyC4";
+    $dbname = "id20631523_db_from_api";
 
     try {
      $conn = new PDO("mysql:host=$server;dbname=$dbname", $user, $password);
