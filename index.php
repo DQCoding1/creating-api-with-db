@@ -11,5 +11,12 @@
         echo json_encode($result);
       }
       break;
+
+    case "POST":
+        $newCar = json_decode(file_get_contents("php://input"), true);
+        postCar($newCar["brand"], $newCar["color"]);
+        $result = array("carCreated" => $newCar);
+        echo json_encode($result);
+      break;
   }
 ?>
