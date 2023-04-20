@@ -7,7 +7,8 @@
       if (isset($_GET["indice"])){
         echo "";
       } else {
-        print_r(getCars());
+        $result = array("cars" => getCars());
+        echo json_encode($result);
       }
       break;
   }
