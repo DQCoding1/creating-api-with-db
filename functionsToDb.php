@@ -25,5 +25,12 @@
     $result = $statement->fetchAll();
     return $result;
   }
+
+
+  function postCar($brand, $color){
+    $conn = connectToDb();
+    $query = "INSERT INTO cars ('brand', 'color') values ('$brand', '$color')";
+    $conn->exec($query);
+  }
    
 ?>
